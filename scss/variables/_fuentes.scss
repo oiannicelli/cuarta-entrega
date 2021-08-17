@@ -1,0 +1,22 @@
+$tamaño: (
+    1: 40px,
+    2: 20px,
+    3: 16px,
+    4: 14px,
+    5: 12px,
+    6: 10px  
+);
+
+$ancho: (
+    bold: 600,
+    regular: 400
+);
+
+@mixin font ($tamaño, $ancho) {
+    font-size: $tamaño;
+    font-weight: $ancho;
+}
+
+.font-1 {
+    @include font (3,bold);
+}

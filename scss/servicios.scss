@@ -1,0 +1,125 @@
+@import url(https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap);
+@import "./variables/colores";
+@import "./variables/reseteo";
+
+body {
+    font-family: 'Karla', sans-serif;
+}
+
+nav {
+    font-style: italic;
+    font-weight: 600;
+    :hover {
+        color: $pink !important; 
+    }
+    a {
+        color: black;
+        :hover {
+            color: $pink !important; 
+        }
+    }
+} 
+
+main { 
+    section {
+        padding: 2rem 4rem 2rem 4rem;
+        justify-items: center;
+    hr {
+        border: solid $pink;
+        border-width: 2px;
+    }
+    h1 {
+        font-size: 40px;
+        font-weight: bold;
+    }
+    h2 {
+        font-size: 40px;
+        font-weight: bold;
+        font-style: italic;
+        padding-bottom: 1rem;
+    }
+    h4 {
+        font-style: italic;
+    }
+    p {
+        align-self: flex-start;
+        font-size: 14px;
+        padding: 3rem 5rem 0rem 0rem;
+    }
+    button {
+        padding: 1rem;
+        border: solid $pink !important;
+        border-width: 0.2rem !important;
+        a {
+            color: $pink;
+            font-weight: 600;
+        }
+    }
+    article {
+        padding: 2rem 4rem 2rem 4rem;
+        background-color: black;
+        color: white;
+        img {
+            box-shadow: 2px 2px 5px black;
+            filter: grayscale(100%);
+            -webkit-filter: grayscale(100%);
+            transition: filter 600ms ease;
+            -webkit-transition: -webkit-filter 600ms ease;
+        }
+        :hover {
+            filter: grayscale(0);
+            -webkit-filter: grayscale(0);
+        }
+        p {
+         padding: 1rem 0rem 3rem 0rem;
+        }
+        label {
+            font-size: 10px;
+        }
+        input {
+            color: $pink !important;
+            font-weight: 600;
+            padding: 1rem;
+            border: solid $pink !important;
+            border-width: 0.2rem !important;
+        }
+    }   
+}
+}
+
+@media only screen and (max-width:320px){
+    main section {
+        p {
+            padding: 20px 0px 10px 0px;
+            align-self: flex-start;
+            font-weight: 400;
+            font-size: 10px;
+        }
+    }
+    header {
+        section {
+            display: grid;
+            grid-template-columns: 100%;
+            justify-content: center;
+            margin: 1rem;
+            hr {
+                border: solid $pink;
+                border-width: 1px;
+            }
+            h1 {
+                font-size: 20px;
+            }
+            p {
+                font-weight: 600;
+                font-size: 12px;
+                padding-top: 0rem;
+            }
+            h6 {
+                font-weight: 400;
+                font-size: 10px;
+                padding-bottom: 1rem;
+            }    
+        }
+    }     
+}
+

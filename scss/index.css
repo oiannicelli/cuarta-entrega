@@ -1,0 +1,122 @@
+@import url(https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap);
+/*reseteo de CSS*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*imagen animada index*/
+.index-img {
+  height: 55vh;
+  position: absolute;
+  background-image: url(../imagenes/index/fondo-index.jpg);
+  background-size: cover;
+  -webkit-animation: movimiento 50s infinite linear;
+          animation: movimiento 50s infinite linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes movimiento {
+  from {
+    background-position: bottom;
+  }
+  to {
+    background-position: top;
+  }
+}
+
+@keyframes movimiento {
+  from {
+    background-position: bottom;
+  }
+  to {
+    background-position: top;
+  }
+}
+
+body {
+  font-family: 'Karla', sans-serif;
+}
+
+nav {
+  font-style: italic;
+  font-weight: 600;
+}
+
+nav :hover {
+  color: #ff0054 !important;
+}
+
+nav a {
+  color: black;
+}
+
+nav a :hover {
+  color: #ff0054 !important;
+}
+
+header section {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 5rem;
+}
+
+header section hr {
+  border: solid #ff0054;
+  border-width: 2px;
+}
+
+header section p {
+  font-weight: 600;
+  font-size: 20px;
+  padding: 2rem 2rem 0rem 0rem;
+}
+
+header section img {
+  width: 100%;
+  -webkit-box-shadow: 2px 2px 5px black;
+          box-shadow: 2px 2px 5px black;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  transition: -webkit-filter 600ms ease;
+  transition: filter 600ms ease;
+  transition: filter 600ms ease, -webkit-filter 600ms ease;
+  -webkit-transition: -webkit-filter 600ms ease;
+}
+
+header section :hover {
+  filter: grayscale(0);
+  -webkit-filter: grayscale(0);
+}
+
+main section article h2 {
+  color: black;
+  font-weight: 800;
+  font-style: italic;
+  font-size: 2rem !important;
+  padding-bottom: 1rem;
+}
+
+main section article p {
+  font-weight: 400;
+  padding-bottom: 1rem;
+}
+
+main section article button {
+  padding: 1rem;
+  border: solid #ff0054 !important;
+  border-width: 0.2rem !important;
+}
+
+main section article button a {
+  color: #ff0054;
+  font-weight: 600;
+}

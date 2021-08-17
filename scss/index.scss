@@ -1,0 +1,91 @@
+@import url(https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap);
+@import "./variables/colores";
+@import "./variables/reseteo";
+
+/*imagen animada index*/
+.index-img {
+    height: 55vh;
+    position: absolute;
+    background-image: url(../imagenes/index/fondo-index.jpg);
+    background-size: cover;
+    animation: movimiento 50s infinite linear;
+    animation-iteration-count: infinite;}
+  @keyframes movimiento {
+  from{background-position: bottom;}
+  to{ background-position: top;}
+}
+
+
+body {
+    font-family: 'Karla', sans-serif;
+}
+
+nav {
+    font-style: italic;
+    font-weight: 600;
+    :hover {
+        color: $pink !important; 
+    }
+    a {
+        color: black;
+        :hover {
+            color: $pink !important; 
+        }
+    }
+} 
+
+header {
+    section {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        justify-content: center;
+        margin: 5rem;
+        hr {
+            border: solid $pink;
+            border-width: 2px;
+        }
+        p {
+            font-weight: 600;
+            font-size: 20px;
+            padding: 2rem 2rem 0rem 0rem;
+        }    
+        img {
+            width: 100%;
+            box-shadow: 2px 2px 5px black;
+            filter: grayscale(100%);
+            -webkit-filter: grayscale(100%);
+            transition: filter 600ms ease;
+            -webkit-transition: -webkit-filter 600ms ease;
+        }
+        :hover {
+            filter: grayscale(0);
+            -webkit-filter: grayscale(0);
+        }
+    }
+} 
+
+main section article {
+    h2 {
+        color: black;
+        font-weight: 800;
+        font-style: italic;
+        font-size: 2rem !important;
+        padding-bottom: 1rem;
+    }
+    p {
+        font-weight: 400;
+        padding-bottom: 1rem;
+    }
+    button {
+        padding: 1rem;
+        border: solid $pink !important;
+        border-width: 0.2rem !important;
+        a {
+            color: $pink;
+            font-weight: 600;
+        }
+    }
+}
+
+
+
