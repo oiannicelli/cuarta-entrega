@@ -98,14 +98,13 @@ main section div h1 {
 }
 
 main section div p {
+  padding: 0rem 20rem 2rem 20rem;
   -ms-flex-item-align: start;
       align-self: flex-start;
   font-size: 16px;
-  padding: 1rem 3rem 2rem 0rem;
 }
 
 main section div .img-byn {
-  padding-left: 5rem;
   width: 100%;
   -webkit-box-shadow: 2px 2px 5px black;
           box-shadow: 2px 2px 5px black;

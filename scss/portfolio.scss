@@ -85,12 +85,11 @@ main {
         font-style: italic;
     }
     p {
+        padding: 0rem 20rem 2rem 20rem;
         align-self: flex-start;
         font-size: 16px;
-        padding: 1rem 3rem 2rem 0rem;
     }
     .img-byn {
-        padding-left: 5rem;
         width: 100%;
         box-shadow: 2px 2px 5px black;
         filter: grayscale(100%);
