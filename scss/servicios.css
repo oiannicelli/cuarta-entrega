@@ -28,6 +28,47 @@ nav a :hover {
   color: #ff0054 !important;
 }
 
+header section {
+  background-color: black;
+  color: white;
+  padding: 3rem;
+}
+
+header section h1 {
+  padding-bottom: 1rem;
+  font-weight: 600;
+  font-size: fuentes 1;
+}
+
+header section p {
+  padding: 0rem 20rem 2rem 20rem;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.content_img {
+  margin: 1em 0;
+}
+
+.content_img .img-text {
+  position: absolute;
+  bottom: 50px;
+  right: 30px;
+  background: rgba(0, 0, 0, 0.65);
+  color: white;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: visibility 0s, opacity 0.5s linear;
+  transition: visibility 0s, opacity 0.5s linear;
+}
+
+.content_img:hover .img-text {
+  padding: 8px 15px;
+  visibility: visible;
+  opacity: 1;
+  max-width: 100%;
+}
+
 main section {
   padding: 2rem 4rem 2rem 4rem;
   justify-items: center;
