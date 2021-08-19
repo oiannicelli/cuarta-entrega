@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap);
 @import "./variables/colores";
 @import "./variables/reseteo";
+@import "./variables/fuentes";
 
 body {
     font-family: 'Karla', sans-serif;
@@ -26,41 +27,63 @@ nav {
 header section {
     background-color: black;
     color: white;
-    padding: 3rem;
+    padding: 2rem;
     h1 {
         padding-bottom: 1rem;
         font-weight: 600;
         font-size: fuentes (1);
     }
     p {
-        padding: 0rem 20rem 2rem 20rem;
+        padding: 0rem 18rem 2rem 18rem;
         font-weight: 400;
         font-size: 14px;
     }
+    .container {
+        position: relative;
+        width: 50%;
+        .image {
+            display: block;
+            width: 100%;
+            height: auto;
+            filter: grayscale(0);
+            -webkit-filter: grayscale(0);
+        }
+        .overlay {
+            position: absolute;
+            top: 10;
+            bottom: 0;
+            left: 10;
+            right: 10;
+            height: 80%;
+            width: 95%;
+            opacity: 0;
+            transition: .5s ease;
+        }
+        .container:hover .overlay {
+            opacity: 1;
+        }
+        .container:hover .image {
+            filter: grayscale(100%);
+            -webkit-filter: grayscale(100%);
+        }
+        .text {
+            color: $pink;
+            background: rgba(255, 255, 255, 0.65);
+            font-weight: 600;
+            font-size: 20px;
+            font-style: italic;
+            position: absolute;
+            width: 20rem;
+            height: 2rem;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            text-align: center;
+        } 
+    }
 }
-
-.content_img {
-    margin: 1em 0;
-    .img-text {
-      position: absolute;
-      bottom: 50px;
-      right: 30px;
-      background: rgba(0, 0, 0, 0.65);
-      color: white;
-      opacity: 0;
-      visibility: hidden;
-      -webkit-transition: visibility 0s, opacity 0.5s linear;
-      transition: visibility 0s, opacity 0.5s linear;
-    }
-    &:hover {
-      .img-text {
-        padding: 8px 15px;
-        visibility: visible;
-        opacity: 1;
-        max-width: 100%;
-      }
-    }
-  }
 
 main { 
     section {

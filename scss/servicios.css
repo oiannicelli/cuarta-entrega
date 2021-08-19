@@ -7,6 +7,11 @@
           box-sizing: border-box;
 }
 
+.font-1 {
+  font-size: 3;
+  font-weight: bold;
+}
+
 body {
   font-family: 'Karla', sans-serif;
 }
@@ -31,7 +36,7 @@ nav a :hover {
 header section {
   background-color: black;
   color: white;
-  padding: 3rem;
+  padding: 2rem;
 }
 
 header section h1 {
@@ -41,32 +46,60 @@ header section h1 {
 }
 
 header section p {
-  padding: 0rem 20rem 2rem 20rem;
+  padding: 0rem 18rem 2rem 18rem;
   font-weight: 400;
   font-size: 14px;
 }
 
-.content_img {
-  margin: 1em 0;
+header section .container {
+  position: relative;
+  width: 50%;
 }
 
-.content_img .img-text {
+header section .container .image {
+  display: block;
+  width: 100%;
+  height: auto;
+  filter: grayscale(0);
+  -webkit-filter: grayscale(0);
+}
+
+header section .container .overlay {
   position: absolute;
-  bottom: 50px;
-  right: 30px;
-  background: rgba(0, 0, 0, 0.65);
-  color: white;
+  top: 10;
+  bottom: 0;
+  left: 10;
+  right: 10;
+  height: 80%;
+  width: 95%;
   opacity: 0;
-  visibility: hidden;
-  -webkit-transition: visibility 0s, opacity 0.5s linear;
-  transition: visibility 0s, opacity 0.5s linear;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
 }
 
-.content_img:hover .img-text {
-  padding: 8px 15px;
-  visibility: visible;
+header section .container .container:hover .overlay {
   opacity: 1;
-  max-width: 100%;
+}
+
+header section .container .container:hover .image {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+}
+
+header section .container .text {
+  color: #ff0054;
+  background: rgba(255, 255, 255, 0.65);
+  font-weight: 600;
+  font-size: 20px;
+  font-style: italic;
+  position: absolute;
+  width: 20rem;
+  height: 2rem;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 main section {
