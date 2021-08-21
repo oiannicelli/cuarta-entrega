@@ -97,6 +97,7 @@ header section article p {
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
+  text-decoration: none;
 }
 
 main section div {

@@ -6,7 +6,11 @@
 body {
     font-family: 'Karla', sans-serif;
     a {
-        
+        text-decoration: none !important;
+    }
+    hr {
+        border: solid $pink;
+        border-width: 2px;
     }
 }
 
@@ -24,23 +28,29 @@ nav {
     }
 } 
 
-header section {
+header {
+section {
     background-color: black;
     color: white;
-    padding: 2rem;
+    padding-top: 3rem;
     h1 {
-        padding-bottom: 1rem;
+        padding-bottom: 0.5rem;
         font-weight: 600;
-        font-size: fuentes (1);
+        font-size: 30px;
     }
     p {
-        padding: 0rem 18rem 2rem 18rem;
+        padding: 0rem 25rem 0rem 25rem;
         font-weight: 400;
         font-size: 14px;
     }
-    .container {
+}
+article {
+    padding: 0rem 10rem 3rem 10rem;
+    background-color: black;
+
+    .container-fluid {
         position: relative;
-        width: 50%;
+        width: 100%;
         .image {
             display: block;
             width: 100%;
@@ -54,8 +64,8 @@ header section {
             bottom: 0;
             left: 10;
             right: 10;
-            height: 80%;
-            width: 95%;
+            height: 90%;
+            width: 91%;
             opacity: 0;
             transition: .5s ease;
         }
@@ -73,7 +83,7 @@ header section {
             font-size: 20px;
             font-style: italic;
             position: absolute;
-            width: 20rem;
+            width: 19.5rem;
             height: 2rem;
             top: 50%;
             left: 50%;
@@ -84,59 +94,63 @@ header section {
         } 
     }
 }
+}
 
 main { 
     section {
-        padding: 2rem 4rem 2rem 4rem;
+        padding: 5rem 0rem 0rem 12rem;
         justify-items: center;
-    hr {
-        border: solid $pink;
-        border-width: 2px;
-    }
-    h1 {
-        font-size: 40px;
-        font-weight: bold;
-    }
-    h2 {
-        font-size: 40px;
-        font-weight: bold;
-        font-style: italic;
-        padding-bottom: 1rem;
-    }
-    h4 {
-        font-style: italic;
-    }
-    p {
-        align-self: flex-start;
-        font-size: 14px;
-        padding: 3rem 5rem 0rem 0rem;
-    }
-    button {
-        padding: 1rem;
-        border: solid $pink !important;
-        border-width: 0.2rem !important;
-        a {
-            color: $pink;
-            font-weight: 600;
+        h1 {
+            font-size: 40px;
+            font-weight: bold;
+        }
+        h2 {
+            font-size: 40px;
+            font-weight: bold;
+            font-style: italic;
+            padding-top: 2rem;
+        }
+        h4 {
+            font-style: italic;
+        }
+        h6 {
+        font-size: 16px;
+        padding: 2rem 10rem 0rem 0rem;
+        }
+        aside {
+            padding: 3rem 12rem 0rem 1rem;
+            text-align: center;
+            p {
+                padding: 2rem 4rem 1rem 4rem;
+                font-size: 14px;
+            }
+            button {
+                padding: 1rem;
+                border: solid $pink !important;
+                border-width: 0.2rem !important;
+                a {
+                    color: $pink;
+                    font-weight: 600;
+                    :hover {
+                    color: black;
+                    }
+                }   
+            }
         }
     }
     article {
-        padding: 2rem 4rem 2rem 4rem;
+        padding: 7rem 13rem 2rem 13rem;
         background-color: black;
         color: white;
-        img {
-            box-shadow: 2px 2px 5px black;
-            filter: grayscale(100%);
-            -webkit-filter: grayscale(100%);
-            transition: filter 600ms ease;
-            -webkit-transition: -webkit-filter 600ms ease;
-        }
-        :hover {
-            filter: grayscale(0);
-            -webkit-filter: grayscale(0);
+        h1 {
+            font-style: italic;
         }
         p {
-         padding: 1rem 0rem 3rem 0rem;
+         padding: 1rem 5rem 3rem 0rem;
+         font-size: 14px;
+        }
+        img {
+            ;
         }
         label {
             font-size: 10px;
@@ -148,8 +162,17 @@ main {
             border: solid $pink !important;
             border-width: 0.2rem !important;
         }
-    }   
-}
+    }
+    .img-byn {
+        filter: grayscale(100%);
+        -webkit-filter: grayscale(100%);
+        transition: filter 600ms ease;
+        -webkit-transition: -webkit-filter 600ms ease;
+    }
+    :hover {
+        filter: grayscale(0);
+        -webkit-filter: grayscale(0);
+    }
 }
 
 @media only screen and (max-width:320px){

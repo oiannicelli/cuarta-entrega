@@ -16,6 +16,15 @@ body {
   font-family: 'Karla', sans-serif;
 }
 
+body a {
+  text-decoration: none !important;
+}
+
+body hr {
+  border: solid #ff0054;
+  border-width: 2px;
+}
+
 nav {
   font-style: italic;
   font-weight: 600;
@@ -36,27 +45,32 @@ nav a :hover {
 header section {
   background-color: black;
   color: white;
-  padding: 2rem;
+  padding-top: 3rem;
 }
 
 header section h1 {
-  padding-bottom: 1rem;
+  padding-bottom: 0.5rem;
   font-weight: 600;
-  font-size: fuentes 1;
+  font-size: 30px;
 }
 
 header section p {
-  padding: 0rem 18rem 2rem 18rem;
+  padding: 0rem 25rem 0rem 25rem;
   font-weight: 400;
   font-size: 14px;
 }
 
-header section .container {
-  position: relative;
-  width: 50%;
+header article {
+  padding: 0rem 10rem 3rem 10rem;
+  background-color: black;
 }
 
-header section .container .image {
+header article .container-fluid {
+  position: relative;
+  width: 100%;
+}
+
+header article .container-fluid .image {
   display: block;
   width: 100%;
   height: auto;
@@ -64,36 +78,36 @@ header section .container .image {
   -webkit-filter: grayscale(0);
 }
 
-header section .container .overlay {
+header article .container-fluid .overlay {
   position: absolute;
   top: 10;
   bottom: 0;
   left: 10;
   right: 10;
-  height: 80%;
-  width: 95%;
+  height: 90%;
+  width: 91%;
   opacity: 0;
   -webkit-transition: .5s ease;
   transition: .5s ease;
 }
 
-header section .container .container:hover .overlay {
+header article .container-fluid .container:hover .overlay {
   opacity: 1;
 }
 
-header section .container .container:hover .image {
+header article .container-fluid .container:hover .image {
   filter: grayscale(100%);
   -webkit-filter: grayscale(100%);
 }
 
-header section .container .text {
+header article .container-fluid .text {
   color: #ff0054;
   background: rgba(255, 255, 255, 0.65);
   font-weight: 600;
   font-size: 20px;
   font-style: italic;
   position: absolute;
-  width: 20rem;
+  width: 19.5rem;
   height: 2rem;
   top: 50%;
   left: 50%;
@@ -103,13 +117,8 @@ header section .container .text {
 }
 
 main section {
-  padding: 2rem 4rem 2rem 4rem;
+  padding: 5rem 0rem 0rem 12rem;
   justify-items: center;
-}
-
-main section hr {
-  border: solid #ff0054;
-  border-width: 2px;
 }
 
 main section h1 {
@@ -121,40 +130,71 @@ main section h2 {
   font-size: 40px;
   font-weight: bold;
   font-style: italic;
-  padding-bottom: 1rem;
+  padding-top: 2rem;
 }
 
 main section h4 {
   font-style: italic;
 }
 
-main section p {
-  -ms-flex-item-align: start;
-      align-self: flex-start;
-  font-size: 14px;
-  padding: 3rem 5rem 0rem 0rem;
+main section h6 {
+  font-size: 16px;
+  padding: 2rem 10rem 0rem 0rem;
 }
 
-main section button {
+main section aside {
+  padding: 3rem 12rem 0rem 1rem;
+  text-align: center;
+}
+
+main section aside p {
+  padding: 2rem 4rem 1rem 4rem;
+  font-size: 14px;
+}
+
+main section aside button {
   padding: 1rem;
   border: solid #ff0054 !important;
   border-width: 0.2rem !important;
 }
 
-main section button a {
+main section aside button a {
   color: #ff0054;
   font-weight: 600;
 }
 
-main section article {
-  padding: 2rem 4rem 2rem 4rem;
+main section aside button a :hover {
+  color: black;
+}
+
+main article {
+  padding: 7rem 13rem 2rem 13rem;
   background-color: black;
   color: white;
 }
 
-main section article img {
-  -webkit-box-shadow: 2px 2px 5px black;
-          box-shadow: 2px 2px 5px black;
+main article h1 {
+  font-style: italic;
+}
+
+main article p {
+  padding: 1rem 5rem 3rem 0rem;
+  font-size: 14px;
+}
+
+main article label {
+  font-size: 10px;
+}
+
+main article input {
+  color: #ff0054 !important;
+  font-weight: 600;
+  padding: 1rem;
+  border: solid #ff0054 !important;
+  border-width: 0.2rem !important;
+}
+
+main .img-byn {
   filter: grayscale(100%);
   -webkit-filter: grayscale(100%);
   transition: -webkit-filter 600ms ease;
@@ -163,25 +203,9 @@ main section article img {
   -webkit-transition: -webkit-filter 600ms ease;
 }
 
-main section article :hover {
+main :hover {
   filter: grayscale(0);
   -webkit-filter: grayscale(0);
-}
-
-main section article p {
-  padding: 1rem 0rem 3rem 0rem;
-}
-
-main section article label {
-  font-size: 10px;
-}
-
-main section article input {
-  color: #ff0054 !important;
-  font-weight: 600;
-  padding: 1rem;
-  border: solid #ff0054 !important;
-  border-width: 0.2rem !important;
 }
 
 @media only screen and (max-width: 320px) {
