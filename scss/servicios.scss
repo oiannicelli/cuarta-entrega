@@ -139,28 +139,38 @@ main {
         }
     }
     article {
-        padding: 7rem 13rem 2rem 13rem;
+        padding: 6rem 13rem 2rem 13rem;
         background-color: black;
         color: white;
         h1 {
             font-style: italic;
         }
         p {
-         padding: 1rem 5rem 3rem 0rem;
+         padding: 1rem 5rem 1rem 0rem;
          font-size: 14px;
         }
-        img {
-            ;
+        div img {
+            padding-bottom: 4rem;
         }
-        label {
-            font-size: 10px;
+        h6 {
+            padding-top: 1rem;
         }
-        input {
-            color: $pink !important;
-            font-weight: 600;
-            padding: 1rem;
-            border: solid $pink !important;
-            border-width: 0.2rem !important;
+        fieldset {
+            color: white;
+            i {
+                padding-bottom: 2rem;
+            }
+            label {
+                font-size: 14px;
+            }
+            input {
+               
+                color: $pink !important;
+                font-weight: 600;
+                padding: 1rem;
+                border: solid $pink !important;
+                border-width: 0.15rem !important;
+            }
         }
     }
     .img-byn {

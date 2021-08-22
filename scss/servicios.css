@@ -168,7 +168,7 @@ main section aside button a :hover {
 }
 
 main article {
-  padding: 7rem 13rem 2rem 13rem;
+  padding: 6rem 13rem 2rem 13rem;
   background-color: black;
   color: white;
 }
@@ -178,20 +178,36 @@ main article h1 {
 }
 
 main article p {
-  padding: 1rem 5rem 3rem 0rem;
+  padding: 1rem 5rem 1rem 0rem;
   font-size: 14px;
 }
 
-main article label {
-  font-size: 10px;
+main article div img {
+  padding-bottom: 4rem;
 }
 
-main article input {
+main article h6 {
+  padding-top: 1rem;
+}
+
+main article fieldset {
+  color: white;
+}
+
+main article fieldset i {
+  padding-bottom: 2rem;
+}
+
+main article fieldset label {
+  font-size: 14px;
+}
+
+main article fieldset input {
   color: #ff0054 !important;
   font-weight: 600;
   padding: 1rem;
   border: solid #ff0054 !important;
-  border-width: 0.2rem !important;
+  border-width: 0.15rem !important;
 }
 
 main .img-byn {
