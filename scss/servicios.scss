@@ -114,8 +114,8 @@ main {
             font-style: italic;
         }
         h6 {
-        font-size: 16px;
-        padding: 2rem 10rem 0rem 0rem;
+            font-size: 16px;
+            padding: 2rem 10rem 0rem 0rem;
         }
         aside {
             padding: 3rem 12rem 0rem 1rem;
@@ -127,7 +127,7 @@ main {
             button {
                 padding: 1rem;
                 border: solid $pink !important;
-                border-width: 0.2rem !important;
+                border-width: 2px !important;
                 a {
                     color: $pink;
                     font-weight: 600;
@@ -169,7 +169,7 @@ main {
                 font-weight: 600;
                 padding: 1rem;
                 border: solid $pink !important;
-                border-width: 0.15rem !important;
+                border-width: 2px !important;
             }
         }
     }

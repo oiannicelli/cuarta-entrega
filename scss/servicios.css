@@ -155,7 +155,7 @@ main section aside p {
 main section aside button {
   padding: 1rem;
   border: solid #ff0054 !important;
-  border-width: 0.2rem !important;
+  border-width: 2px !important;
 }
 
 main section aside button a {
@@ -207,7 +207,7 @@ main article fieldset input {
   font-weight: 600;
   padding: 1rem;
   border: solid #ff0054 !important;
-  border-width: 0.15rem !important;
+  border-width: 2px !important;
 }
 
 main .img-byn {

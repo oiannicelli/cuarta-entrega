@@ -1,0 +1,10 @@
+@import "./variables/colores";
+
+$tamaño: (
+    : 2px
+);
+
+@mixin font ($tamaño, $) {
+    font-size: $tamaño;
+    font-weight: $ancho;
+}

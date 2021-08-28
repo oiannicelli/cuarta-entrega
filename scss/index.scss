@@ -4,6 +4,7 @@
 
 /*imagen animada index*/
 .index-img {
+    object-fit: cover;
     height: 55vh;
     position: absolute;
     background-image: url(../imagenes/index/fondo-index.jpg);
@@ -15,69 +16,37 @@
   to{ background-position: top;}
 }
 
-
 body {
     font-family: 'Karla', sans-serif;
+    header {
+        nav {
+            font-style: italic;
+            font-weight: 600;
+            :hover {
+                color: $pink !important; 
+            }
+            a {
+                color: black;
+                :hover {
+                    color: $pink !important; 
+                }
+            }
+        } 
+    } 
 }
 
-nav {
-    font-style: italic;
-    font-weight: 600;
-    :hover {
-        color: $pink !important; 
-    }
-    a {
-        color: black;
-        :hover {
-            color: $pink !important; 
-        }
-    }
-} 
-
-header {
-    section {
-        display: grid;
-        grid-template-columns: 50% 50%;
-        justify-content: center;
-        margin: 5rem;
-        hr {
-            border: solid $pink;
-            border-width: 2px;
-        }
-        p {
-            font-weight: 600;
-            font-size: 20px;
-            padding: 2rem 2rem 0rem 0rem;
-        }    
-        img {
-            width: 100%;
-            box-shadow: 2px 2px 5px black;
-            filter: grayscale(100%);
-            -webkit-filter: grayscale(100%);
-            transition: filter 600ms ease;
-            -webkit-transition: -webkit-filter 600ms ease;
-        }
-        :hover {
-            filter: grayscale(0);
-            -webkit-filter: grayscale(0);
-        }
-    }
-} 
-
 main section article {
+    justify-content: center;
     h2 {
         color: black;
         font-weight: 800;
         font-style: italic;
-        font-size: 2rem !important;
-        padding-bottom: 1rem;
+        font-size: 2rem;
     }
     p {
         font-weight: 400;
-        padding-bottom: 1rem;
     }
     button {
-        padding: 1rem;
         border: solid $pink !important;
         border-width: 0.2rem !important;
         a {
@@ -87,5 +56,26 @@ main section article {
     }
 }
 
-
-
+@media only screen and (max-width:320px) {
+    /*imagen animada index mobile*/
+    .index-img {
+        height: 30vh;
+    }
+    main section article{
+        h2 {
+            font-size: 16px;
+        }
+        p {
+            font-size: 10px;
+        }
+        button a {
+            font-size: 12px;
+        }
+    }
+    footer {
+        font-size: 10px;
+        i {
+          font-size: 14px;
+        }
+    }    
+}

@@ -9,6 +9,8 @@
 
 /*imagen animada index*/
 .index-img {
+  -o-object-fit: cover;
+     object-fit: cover;
   height: 55vh;
   position: absolute;
   background-image: url(../imagenes/index/fondo-index.jpg);
@@ -41,77 +43,41 @@ body {
   font-family: 'Karla', sans-serif;
 }
 
-nav {
+body header nav {
   font-style: italic;
   font-weight: 600;
 }
 
-nav :hover {
+body header nav :hover {
   color: #ff0054 !important;
 }
 
-nav a {
+body header nav a {
   color: black;
 }
 
-nav a :hover {
+body header nav a :hover {
   color: #ff0054 !important;
 }
 
-header section {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 50% 50%;
-      grid-template-columns: 50% 50%;
+main section article {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 5rem;
-}
-
-header section hr {
-  border: solid #ff0054;
-  border-width: 2px;
-}
-
-header section p {
-  font-weight: 600;
-  font-size: 20px;
-  padding: 2rem 2rem 0rem 0rem;
-}
-
-header section img {
-  width: 100%;
-  -webkit-box-shadow: 2px 2px 5px black;
-          box-shadow: 2px 2px 5px black;
-  filter: grayscale(100%);
-  -webkit-filter: grayscale(100%);
-  transition: -webkit-filter 600ms ease;
-  transition: filter 600ms ease;
-  transition: filter 600ms ease, -webkit-filter 600ms ease;
-  -webkit-transition: -webkit-filter 600ms ease;
-}
-
-header section :hover {
-  filter: grayscale(0);
-  -webkit-filter: grayscale(0);
 }
 
 main section article h2 {
   color: black;
   font-weight: 800;
   font-style: italic;
-  font-size: 2rem !important;
-  padding-bottom: 1rem;
+  font-size: 2rem;
 }
 
 main section article p {
   font-weight: 400;
-  padding-bottom: 1rem;
 }
 
 main section article button {
-  padding: 1rem;
   border: solid #ff0054 !important;
   border-width: 0.2rem !important;
 }
@@ -119,4 +85,26 @@ main section article button {
 main section article button a {
   color: #ff0054;
   font-weight: 600;
+}
+
+@media only screen and (max-width: 320px) {
+  /*imagen animada index mobile*/
+  .index-img {
+    height: 30vh;
+  }
+  main section article h2 {
+    font-size: 16px;
+  }
+  main section article p {
+    font-size: 10px;
+  }
+  main section article button a {
+    font-size: 12px;
+  }
+  footer {
+    font-size: 10px;
+  }
+  footer i {
+    font-size: 14px;
+  }
 }
