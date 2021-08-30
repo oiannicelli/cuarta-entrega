@@ -18,6 +18,9 @@
 
 body {
     font-family: 'Karla', sans-serif;
+    a {
+        text-decoration: none !important;
+    }
     header {
         nav {
             font-style: italic;
@@ -26,32 +29,38 @@ body {
                 color: $pink !important; 
             }
             a {
-                color: black;
+                color: $negro;
                 :hover {
                     color: $pink !important; 
                 }
             }
         } 
-    } 
-}
-
-main section article {
-    justify-content: center;
-    h2 {
-        color: black;
-        font-weight: 800;
-        font-style: italic;
-        font-size: 2rem;
     }
-    p {
-        font-weight: 400;
+    main section article {
+        justify-content: center;
+        h2 {
+            color: $negro;
+            font-weight: 800;
+            font-style: italic;
+            font-size: 2rem;
+        }
+        p {
+            padding: 20px;
+            font-weight: 400;
+        }
+        button {
+            a {
+                color: $negro;
+                font-weight: 600;
+            }
+            :hover {
+                color: $pink;
+            }
+        }
     }
-    button {
-        border: solid $pink !important;
-        border-width: 0.2rem !important;
-        a {
+    footer {
+        :hover {
             color: $pink;
-            font-weight: 600;
         }
     }
 }
@@ -59,23 +68,26 @@ main section article {
 @media only screen and (max-width:320px) {
     /*imagen animada index mobile*/
     .index-img {
-        height: 30vh;
+        height: 20vh;
     }
-    main section article{
-        h2 {
-            font-size: 16px;
+    body {
+        main section article {
+            h2 {
+                font-size: 16px;
+            }
+            p {
+                padding: 5px;
+                font-size: 12px;
+            }
+            button a{ 
+                font-size: 12px;
+            }
         }
-        p {
+        footer {
             font-size: 10px;
-        }
-        button a {
-            font-size: 12px;
-        }
-    }
-    footer {
-        font-size: 10px;
-        i {
-          font-size: 14px;
-        }
-    }    
+            i {
+              font-size: 14px;
+            }
+        } 
+    }   
 }
