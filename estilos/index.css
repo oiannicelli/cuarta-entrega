@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url(https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap);
 /*reseteo de CSS*/
 * {
@@ -5,6 +6,59 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+/*variables de colores*/
+/*detalles de estilo en elemento hr*/
+.linearosa {
+  border: solid #ff0054;
+  border-width: 2px;
+}
+
+/*boton*/
+.btn_pink {
+  background-color: #F9F7F4;
+  border: none;
+  border-radius: 12px;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.btn_pink a {
+  color: #0A0A0A;
+  font-weight: 600;
+}
+
+.btn_pink:hover {
+  background-color: #ff0054;
+  border-radius: 12px;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.btn_pink:hover a {
+  color: #F9F7F4;
+  font-weight: 600;
+}
+
+/*imagenes en blanco y negro*/
+.byn {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  transition: -webkit-filter 600ms ease;
+  transition: filter 600ms ease;
+  transition: filter 600ms ease, -webkit-filter 600ms ease;
+  -webkit-transition: -webkit-filter 600ms ease;
+}
+
+:hover {
+  filter: grayscale(0);
+  -webkit-filter: grayscale(0);
 }
 
 /*imagen animada index*/
@@ -37,6 +91,23 @@
   to {
     background-position: top;
   }
+}
+
+/*utilice mixins para los textos*/
+/*utilicé extend para los titulos de las secciones y las subseciones dentro de cada sección*/
+.titulo {
+  font-size: 40px;
+  font-weight: 600;
+  color: #0A0A0A;
+}
+
+.titulo--secundario {
+  font-style: italic;
+}
+
+.titulo--secundario-blanco {
+  color: #F9F7F4;
+  font-style: italic;
 }
 
 body {

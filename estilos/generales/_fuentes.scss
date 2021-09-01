@@ -1,0 +1,22 @@
+/*utilice mixins para los textos*/
+@mixin fuente ($color, $font-size, $font-weight, $font-style, $padding){
+    color: $color;
+    font-size: $font-size;
+    font-weight: $font-weight;
+    font-style: $font-style;
+    padding: $padding;
+}
+
+/*utilicé extend para los titulos de las secciones y las subseciones dentro de cada sección*/
+.titulo {
+    font-size: 40px;
+    font-weight: 600;
+    color: $negro;
+}
+.titulo--secundario {
+    font-style: italic;
+}
+.titulo--secundario-blanco {
+    color: $blanco;
+    font-style: italic;
+}

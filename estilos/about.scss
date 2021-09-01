@@ -1,0 +1,94 @@
+@import url(https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap);
+@import "./generales/generales";
+@import "./generales/imagenes";
+@import "./generales/fuentes";
+
+body {
+    font-family: 'Karla', sans-serif;
+    a {
+        text-decoration: none !important;
+    }
+    header {
+        nav {
+            font-style: italic;
+            font-weight: 600;
+            :hover {
+                color: $pink !important; 
+            }
+            a {
+                color: $negro;
+                :hover {
+                    color: $pink !important; 
+                }
+            }
+        } 
+    }
+    main {
+        justify-content: center;
+        section {
+            padding-bottom: 5rem;
+            p {
+                @include fuente ($negro, 16px, 600, none, 1rem 10rem 0rem 0rem);
+            }
+            h2 {
+                @include fuente ($negro, 40px, 800, italic, 0rem);
+            }
+            h6 {
+                @include fuente ($negro, 16px, 400, none, 0rem 15rem 0rem 0rem);
+            }
+        }
+        article {
+            background-color: $negro;
+            padding: 5rem;
+            p {
+                @include fuente ($blanco, 16px, 600, none, 0rem);
+            }
+            h6 {
+                @include fuente ($blanco, 16px, 400, none, 0rem);
+            }
+        }
+    }
+    footer {
+        :hover {
+            color: $pink;
+        }
+    }
+}
+
+/*
+@media only screen and (max-width:320px){
+    main section {
+        p {
+            padding: 20px 0px 10px 0px;
+            align-self: flex-start;
+            font-weight: 400;
+            font-size: fuentes (6);
+        }
+    }
+    header {
+        section {
+            display: grid;
+            grid-template-columns: 100%;
+            justify-content: center;
+            margin: 1rem;
+            hr {
+                border: solid $pink;
+                border-width: 1px;
+            }
+            h1 {
+                font-size: fuentes (2);
+            }
+            p {
+                font-weight: 600;
+                font-size: fuentes (5);
+                padding-top: 0rem;
+            }
+            h6 {
+                font-weight: 400;
+                font-size: fuentes (6);
+                padding-bottom: 1rem;
+            }    
+        }
+    }     
+}
+*/

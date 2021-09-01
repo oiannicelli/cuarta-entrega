@@ -11,15 +11,14 @@
     <!--favicon.ico-->
 	<link rel="shortcut icon" type="image/x-icon" href="../imagenes/4826Isologo.ico">
     <!-- archivos css -->
-    <link rel="stylesheet" href="../scss/about.css">
+    <link rel="stylesheet" href="../estilos/about.css">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <!--fuente-->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
 </head>
-<body>
-    
+<body>   
     <header>
         <nav class="navbar bg-white">
             <a class="navbar-brand ml-2" href="../index.html">
@@ -44,20 +43,26 @@
     </header>
     
     <main class="conteiner">
-        <div>
-            <h1 class="font-1">SOBRE MI<hr></h1>
-            <p>¡Hola! ¿Cómo estás? Mi nombre es Orne, soy licenciada en Diseño Textil e Indumentaria con experiencia en distintas áreas de la industria Argentina.
-            Tengo conocimientos en branding y visual merchandising, y también, estoy capacitandome para ser desarrolladora front end.</p>
-            <h6>Actualmente brindo servicios de forma freelance para marcas o emprendimientos.</h6>
-        </div>
-        <div>
-            <img src="../imagenes/about/retrato.jpg" alt="portaretrato">
-        </div>
-        <section class="row m-5">
-            <img class="col-sm-6 col-md-4" src="../imagenes/about/escritorio4.JPG" alt="reja">
-            <p class="col-sm-12 col-md-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae adipisci sequi est? Dolorum quidem excepturi, reiciendis deserunt nesciunt amet, ipsum libero consequuntur hic, distinctio sunt. Accusamus minus tempore sed asperiores. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae adipisci sequi est? Dolorum quidem excepturi, reiciendis deserunt nesciunt amet, ipsum libero consequuntur hic, distinctio sunt. Accusamus minus tempore sed asperiores.</p>
-            <img class="col-sm-6 col-md-4" src="../imagenes/about/escritorio8.JPG" alt="compu">
+        <section class="row justify-content-center">
+            <div class="col-12 col-lg-offset-3 col-lg-5">
+                <h1 class="titulo">SOBRE MI<hr class="linearosa"></h1>
+                <p>¡Hola! ¿Cómo estás? Mi nombre es Orne, soy licenciada en Diseño Textil e Indumentaria con experiencia en distintas áreas de la industria Argentina.</p>
+                <h6>Tengo conocimientos en branding y visual merchandising, y también, estoy capacitandome  para ser desarrolladora front end.</h6>
+            </div>
+            <div class="col-12 col-lg-5">
+                <img class="byn img-fluid" src="../imagenes/about/retrato.jpg" alt="portaretrato">
+            </div> 
         </section>
+        <article class="row">
+            <div class="col-12 text-center">
+                <h6>Soy profunda e intuitiva. Creativa y pasional.<br>Soy una obsesiva del orden y el detalle.<br>
+                Soy pura acción y estoy en la constante búsqueda de crear y aprender cosas nuevas.</h6>
+                <p>Actualmente brindo servicios de forma freelance para marcas o emprendimientos. Desde este espacio acompaño a emprendedoras apasionadas a conectar con su propósito y transformar su talento en una marca que impacte y emocione.</p>
+                <button type="button" class="btn_pink">
+                    <a href="./html/servicios.html">¡Mirá algunos de los trabajos que realicé!</a>
+                </button>
+            </div>
+        </article>
     </main>
     
     <footer class="container-fluid">

@@ -1,0 +1,25 @@
+/*imagenes en blanco y negro*/
+.byn {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    transition: filter 600ms ease;
+    -webkit-transition: -webkit-filter 600ms ease;
+}
+:hover {
+    filter: grayscale(0);
+    -webkit-filter: grayscale(0);
+}
+
+/*imagen animada index*/
+.index-img {
+    object-fit: cover;
+    height: 55vh;
+    position: absolute;
+    background-image: url(../imagenes/index/fondo-index.jpg);
+    background-size: cover;
+    animation: movimiento 50s infinite linear;
+    animation-iteration-count: infinite;}
+  @keyframes movimiento {
+  from{background-position: bottom;}
+  to{ background-position: top;}
+}
