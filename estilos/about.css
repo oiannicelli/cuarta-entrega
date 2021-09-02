@@ -9,6 +9,32 @@
 }
 
 /*variables de colores*/
+/*generales en body*/
+.bd {
+  font-family: 'Karla', sans-serif;
+}
+
+.bd a {
+  text-decoration: none !important;
+}
+
+.bd header nav {
+  font-style: italic;
+  font-weight: 600;
+}
+
+.bd header nav :hover {
+  color: #ff0054 !important;
+}
+
+.bd header nav a {
+  color: #0A0A0A;
+}
+
+.bd header nav a :hover {
+  color: #ff0054 !important;
+}
+
 /*detalles de estilo en elemento hr*/
 .linearosa {
   border: solid #ff0054;
@@ -44,6 +70,11 @@
 .btn_pink:hover a {
   color: #F9F7F4;
   font-weight: 600;
+}
+
+/*estilo para footer*/
+.ftr :hover {
+  color: #ff0054;
 }
 
 /*imagenes en blanco y negro*/
@@ -110,31 +141,6 @@
   font-style: italic;
 }
 
-body {
-  font-family: 'Karla', sans-serif;
-}
-
-body a {
-  text-decoration: none !important;
-}
-
-body header nav {
-  font-style: italic;
-  font-weight: 600;
-}
-
-body header nav :hover {
-  color: #ff0054 !important;
-}
-
-body header nav a {
-  color: #0A0A0A;
-}
-
-body header nav a :hover {
-  color: #ff0054 !important;
-}
-
 body main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -190,44 +196,39 @@ body main article h6 {
   padding: 0rem;
 }
 
-body footer :hover {
-  color: #ff0054;
+@media only screen and (max-width: 320px) {
+  body main section {
+    padding: 1rem;
+  }
+  body main section p {
+    font-size: 14px;
+    padding: 0rem;
+  }
+  body main section h6 {
+    font-size: 12px;
+    padding: 0rem;
+  }
+  body main section img {
+    padding-top: 25px;
+  }
+  body main article {
+    padding: 2rem;
+  }
+  body main article h6 {
+    font-size: 12px;
+    padding-bottom: 1rem;
+  }
+  body main article p {
+    font-size: 10px;
+    padding-bottom: 1rem;
+  }
+  body main article button a {
+    font-size: 10px;
+  }
+  body footer {
+    font-size: 10px;
+  }
+  body footer i {
+    font-size: 14px;
+  }
 }
-
-/*
-@media only screen and (max-width:320px){
-    main section {
-        p {
-            padding: 20px 0px 10px 0px;
-            align-self: flex-start;
-            font-weight: 400;
-            font-size: fuentes (6);
-        }
-    }
-    header {
-        section {
-            display: grid;
-            grid-template-columns: 100%;
-            justify-content: center;
-            margin: 1rem;
-            hr {
-                border: solid $pink;
-                border-width: 1px;
-            }
-            h1 {
-                font-size: fuentes (2);
-            }
-            p {
-                font-weight: 600;
-                font-size: fuentes (5);
-                padding-top: 0rem;
-            }
-            h6 {
-                font-weight: 400;
-                font-size: fuentes (6);
-                padding-bottom: 1rem;
-            }    
-        }
-    }     
-}
-*/

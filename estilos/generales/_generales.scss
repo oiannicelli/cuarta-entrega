@@ -4,18 +4,37 @@ margin: 0;
 padding: 0;
 box-sizing: border-box;
 }
-
 /*variables de colores*/
 $pink: #ff0054;
 $blanco: #F9F7F4;
 $negro: #0A0A0A;
-
+/*generales en body*/
+.bd {
+    font-family: 'Karla', sans-serif;
+    a {
+        text-decoration: none !important;        
+    }
+    header {
+        nav {
+            font-style: italic;
+            font-weight: 600;
+                :hover {
+                    color: $pink !important; 
+                }
+            a {
+                color: $negro;
+                    :hover {
+                        color: $pink !important; 
+                    }
+            }
+        } 
+    }
+}
 /*detalles de estilo en elemento hr*/
 .linearosa {
     border: solid $pink;
     border-width: 2px;
 }
-
 /*boton*/
 .btn_pink {
     background-color: $blanco;
@@ -41,5 +60,11 @@ $negro: #0A0A0A;
     a {
         color: $blanco;
         font-weight: 600;
+    }
+}
+/*estilo para footer*/
+.ftr {
+    :hover {
+        color: $pink;
     }
 }

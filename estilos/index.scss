@@ -4,77 +4,36 @@
 @import "./generales/fuentes";
 
 body {
-    font-family: 'Karla', sans-serif;
-    a {
-        text-decoration: none !important;
-    }
-    header {
-        nav {
-            font-style: italic;
-            font-weight: 600;
-            :hover {
-                color: $pink !important; 
-            }
-            a {
-                color: $negro;
-                :hover {
-                    color: $pink !important; 
-                }
-            }
-        } 
-    }
     main section article {
         justify-content: center;
         h2 {
-            color: $negro;
-            font-weight: 800;
-            font-style: italic;
-            font-size: 2rem;
+            @include fuente ($negro, 40px, 800, italic, 0rem);
         }
         p {
-            padding: 20px;
-            font-weight: 400;
-        }
-        button {
-            a {
-                color: $negro;
-                font-weight: 600;
-            }
-            :hover {
-                color: $pink;
-            }
-        }
-    }
-    footer {
-        :hover {
-            color: $pink;
+            @include fuente ($negro, 16px, 400, none, 2rem);
         }
     }
 }
 
 @media only screen and (max-width:320px) {
-    /*imagen animada index mobile*/
-    .index-img {
-        height: 20vh;
-    }
     body {
         main section article {
             h2 {
-                font-size: 16px;
+                font-size: 20px;
             }
             p {
-                padding: 5px;
-                font-size: 12px;
+                font-size: 14px;
+                padding: 0rem;
             }
-            button a{ 
-                font-size: 12px;
+            button a {
+                font-size: 12px; 
             }
         }
         footer {
             font-size: 10px;
             i {
-              font-size: 14px;
+                font-size: 14px;
             }
-        } 
-    }   
+        }
+    }
 }

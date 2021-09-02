@@ -4,25 +4,6 @@
 @import "./generales/fuentes";
 
 body {
-    font-family: 'Karla', sans-serif;
-    a {
-        text-decoration: none !important;
-    }
-    header {
-        nav {
-            font-style: italic;
-            font-weight: 600;
-            :hover {
-                color: $pink !important; 
-            }
-            a {
-                color: $negro;
-                :hover {
-                    color: $pink !important; 
-                }
-            }
-        } 
-    }
     main {
         justify-content: center;
         section {
@@ -48,47 +29,47 @@ body {
             }
         }
     }
-    footer {
-        :hover {
-            color: $pink;
-        }
-    }
 }
 
-/*
 @media only screen and (max-width:320px){
-    main section {
-        p {
-            padding: 20px 0px 10px 0px;
-            align-self: flex-start;
-            font-weight: 400;
-            font-size: fuentes (6);
+    body {
+        main {
+            section {
+                padding: 1rem;
+                p {
+                    font-size: 14px;
+                    padding: 0rem;
+                }
+                h6 {
+                    font-size: 12px;
+                    padding: 0rem;
+                }
+                img {
+                    padding-top: 25px;
+                }
+            }
+            article {
+                padding: 2rem;
+                h6 {
+                    font-size: 12px;
+                    padding-bottom: 1rem;
+                }
+                p {
+                    font-size: 10px;
+                    padding-bottom: 1rem;
+                }
+                button {
+                    a {            
+                        font-size: 10px; 
+                    }
+                }
+            }
+        }
+        footer {
+            font-size: 10px;
+            i {
+                font-size: 14px;
+            }
         }
     }
-    header {
-        section {
-            display: grid;
-            grid-template-columns: 100%;
-            justify-content: center;
-            margin: 1rem;
-            hr {
-                border: solid $pink;
-                border-width: 1px;
-            }
-            h1 {
-                font-size: fuentes (2);
-            }
-            p {
-                font-weight: 600;
-                font-size: fuentes (5);
-                padding-top: 0rem;
-            }
-            h6 {
-                font-weight: 400;
-                font-size: fuentes (6);
-                padding-bottom: 1rem;
-            }    
-        }
-    }     
 }
-*/

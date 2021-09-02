@@ -9,6 +9,32 @@
 }
 
 /*variables de colores*/
+/*generales en body*/
+.bd {
+  font-family: 'Karla', sans-serif;
+}
+
+.bd a {
+  text-decoration: none !important;
+}
+
+.bd header nav {
+  font-style: italic;
+  font-weight: 600;
+}
+
+.bd header nav :hover {
+  color: #ff0054 !important;
+}
+
+.bd header nav a {
+  color: #0A0A0A;
+}
+
+.bd header nav a :hover {
+  color: #ff0054 !important;
+}
+
 /*detalles de estilo en elemento hr*/
 .linearosa {
   border: solid #ff0054;
@@ -44,6 +70,11 @@
 .btn_pink:hover a {
   color: #F9F7F4;
   font-weight: 600;
+}
+
+/*estilo para footer*/
+.ftr :hover {
+  color: #ff0054;
 }
 
 /*imagenes en blanco y negro*/
@@ -110,31 +141,6 @@
   font-style: italic;
 }
 
-body {
-  font-family: 'Karla', sans-serif;
-}
-
-body a {
-  text-decoration: none !important;
-}
-
-body header nav {
-  font-style: italic;
-  font-weight: 600;
-}
-
-body header nav :hover {
-  color: #ff0054 !important;
-}
-
-body header nav a {
-  color: #0A0A0A;
-}
-
-body header nav a :hover {
-  color: #ff0054 !important;
-}
-
 body main section article {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -143,40 +149,27 @@ body main section article {
 
 body main section article h2 {
   color: #0A0A0A;
+  font-size: 40px;
   font-weight: 800;
   font-style: italic;
-  font-size: 2rem;
+  padding: 0rem;
 }
 
 body main section article p {
-  padding: 20px;
-  font-weight: 400;
-}
-
-body main section article button a {
   color: #0A0A0A;
-  font-weight: 600;
-}
-
-body main section article button :hover {
-  color: #ff0054;
-}
-
-body footer :hover {
-  color: #ff0054;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: none;
+  padding: 2rem;
 }
 
 @media only screen and (max-width: 320px) {
-  /*imagen animada index mobile*/
-  .index-img {
-    height: 20vh;
-  }
   body main section article h2 {
-    font-size: 16px;
+    font-size: 20px;
   }
   body main section article p {
-    padding: 5px;
-    font-size: 12px;
+    font-size: 14px;
+    padding: 0rem;
   }
   body main section article button a {
     font-size: 12px;

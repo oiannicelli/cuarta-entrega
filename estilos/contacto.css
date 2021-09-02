@@ -9,6 +9,32 @@
 }
 
 /*variables de colores*/
+/*generales en body*/
+.bd {
+  font-family: 'Karla', sans-serif;
+}
+
+.bd a {
+  text-decoration: none !important;
+}
+
+.bd header nav {
+  font-style: italic;
+  font-weight: 600;
+}
+
+.bd header nav :hover {
+  color: #ff0054 !important;
+}
+
+.bd header nav a {
+  color: #0A0A0A;
+}
+
+.bd header nav a :hover {
+  color: #ff0054 !important;
+}
+
 /*detalles de estilo en elemento hr*/
 .linearosa {
   border: solid #ff0054;
@@ -44,6 +70,11 @@
 .btn_pink:hover a {
   color: #F9F7F4;
   font-weight: 600;
+}
+
+/*estilo para footer*/
+.ftr :hover {
+  color: #ff0054;
 }
 
 /*imagenes en blanco y negro*/
