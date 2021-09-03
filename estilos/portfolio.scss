@@ -3,36 +3,29 @@
 @import "./generales/imagenes";
 @import "./generales/fuentes";
 
-body {
-    font-family: 'Karla', sans-serif;
-}
-
-nav {
-    font-style: italic;
-    font-weight: 600;
-    :hover {
-        color: $pink !important; 
-    }
-    a {
-        color: black;
-        :hover {
-            color: $pink !important; 
-        }
-    }
-} 
-
-header section article {
+body main {
+    div article {
         margin: 5rem;
         hr {
             border: solid $pink;
             border-width: 2px;
         }
         p {
-            font-weight: 600;
-            font-size: 14px;
+            @include fuente ($negro, 14px, 600, none, 0rem);
         }
-} 
-
+    }
+    section div {
+        background-color: $negro;
+        padding-bottom: 3rem;
+        h1 {
+            @include fuente ($blanco, 40px, 800, italic, 3rem 0rem 1rem 0rem);
+        }
+        p {
+            @include fuente ($blanco, 16px, 400, none, 0rem 25rem 0rem 25rem);
+        }
+    }
+}
+/*estilo de imagen con enlace*/
 .container {
     position: relative;
     width: 50%;
@@ -81,36 +74,7 @@ header section article {
     } 
 }
 
-main { 
-    section div {
-    justify-content: center;
-    color: white;
-    background-color: black;
-    h1 {
-        font-size: 40px;
-        font-weight: bold;
-        font-style: italic;
-    }
-    p {
-        padding: 0rem 20rem 2rem 20rem;
-        align-self: flex-start;
-        font-size: 16px;
-    }
-    .img-byn {
-        width: 100%;
-        box-shadow: 2px 2px 5px black;
-        filter: grayscale(100%);
-        -webkit-filter: grayscale(100%);
-        transition: filter 600ms ease;
-        -webkit-transition: -webkit-filter 600ms ease;
-    }
-    :hover {
-        filter: grayscale(0);
-        -webkit-filter: grayscale(0);
-    }    
-}
-}
-
+/*
 @media only screen and (max-width:320px){
     main section {
         p {
@@ -146,4 +110,4 @@ main {
         }
     }     
 }
-
+*/
