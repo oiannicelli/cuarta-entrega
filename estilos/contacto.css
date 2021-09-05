@@ -77,6 +77,14 @@
   color: #ff0054;
 }
 
+.iconos {
+  color: #F9F7F4;
+}
+
+.iconos :hover {
+  color: #ff0054;
+}
+
 /*imagenes en blanco y negro*/
 .byn {
   filter: grayscale(100%);
@@ -141,119 +149,140 @@
   font-style: italic;
 }
 
-body {
-  font-family: 'Karla', sans-serif;
+/*fondo rosa sobre titulo*/
+.wrap {
+  padding: 10% 20%;
 }
 
-nav {
-  font-style: italic;
-  font-weight: 600;
+.underlined {
+  color: #0A0A0A;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  line-height: 1.2;
+  text-decoration: none;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #ff0054), to(#ff0054));
+  background-image: linear-gradient(to right, #ff0054 0, #ff0054 100%);
+  background-position: 0 1.2em;
+  background-size: 0 100%;
+  background-repeat: no-repeat;
+  -webkit-transition: background .5s;
+  transition: background .5s;
 }
 
-nav :hover {
-  color: #ff0054 !important;
+.underlined:hover {
+  background-size: 100% 100%;
+  color: #F9F7F4;
 }
 
-nav a {
-  color: black;
+.underlined--thick {
+  background-position: 0 -0.1em;
 }
 
-nav a :hover {
-  color: #ff0054 !important;
+/*texto rosa sobre titulo index*/
+.wrap {
+  padding: 10% 20%;
 }
 
-header section {
-  margin-bottom: 3rem;
+.pink {
+  color: #0A0A0A;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  line-height: 1.2;
+  text-decoration: none;
+  background-position: 0 1.2em;
+  background-size: 0 100%;
+  background-repeat: no-repeat;
+  -webkit-transition: background .5s;
+  transition: background .5s;
 }
 
-header section hr {
-  border: solid #ff0054;
-  border-width: 2px;
-}
-
-header section h1 {
-  font-size: 40px;
-  font-weight: bold;
-}
-
-header section p {
-  font-weight: 600;
-  font-size: 16px;
-  padding-right: 4rem;
-}
-
-header section h6 {
-  font-weight: 400;
-  font-size: 14px;
-  padding-right: 4rem;
-}
-
-header section a {
-  lighting-color: black !important;
-}
-
-header section fieldset {
-  font-size: 16px;
-}
-
-header section label {
+.pink:hover {
+  background-size: 100% 100%;
   color: #ff0054;
-  font-size: 10px;
 }
 
-header section input {
+.pink--thick {
+  background-position: 0 -0.1em;
+}
+
+body main section {
+  background-color: #0A0A0A;
+  padding: 2rem 12rem 2rem 12rem;
+}
+
+body main section h1 {
+  color: #F9F7F4;
+  font-size: 40px;
+  font-weight: 600;
+  font-style: none;
+  padding: 0rem;
+}
+
+body main section p {
+  color: #F9F7F4;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: none;
+  padding: 0rem 12rem 0rem 0rem;
+}
+
+body main section h6 {
+  color: #F9F7F4;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: none;
+  padding: 0rem 25rem 5rem 0rem;
+}
+
+body main section fieldset label {
+  color: #F9F7F4;
+  font-size: 12px;
+  font-weight: 400;
+  font-style: none;
+  padding: 0rem;
+}
+
+body main section fieldset input {
   padding: 3px;
-  width: 330px;
+  width: 280px;
 }
 
-header section textarea {
-  width: 330px;
+body main section fieldset textarea {
+  width: 280px;
 }
 
-header section .enviar {
+body main section fieldset .enviar {
   background-color: #ff0054;
-  color: white;
+  color: #F9F7F4;
   border-color: transparent;
-}
-
-main {
-  background-color: black;
+  border-radius: 12px;
 }
 
 @media only screen and (max-width: 320px) {
-  header section hr {
-    border: solid #ff0054;
-    border-width: 2px;
+  body main section {
+    padding: 2rem 0rem 2rem 0rem;
   }
-  header section h1 {
-    font-size: 20px;
-    font-weight: bold;
-  }
-  header section p {
+  body main section h1 {
+    color: #F9F7F4;
+    font-size: 40px;
     font-weight: 600;
-    font-size: 10px;
+    font-style: none;
+    padding: 0rem;
   }
-  header section h6 {
-    font-weight: 400;
-    font-size: 10px;
-  }
-  header section fieldset {
+  body main section p {
+    color: #F9F7F4;
     font-size: 16px;
+    font-weight: 400;
+    font-style: none;
+    padding: 0rem;
   }
-  header section label {
-    color: #ff0054;
-    font-size: 10px;
-  }
-  header section input {
-    padding: 3px;
-    width: 280px;
-  }
-  header section textarea {
-    width: 280px;
-  }
-  header section .enviar {
-    background-color: #ff0054;
-    color: white;
-    border-color: transparent;
+  body main section h6 {
+    color: #F9F7F4;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: none;
+    padding: 0rem 0rem 2rem 0rem;
   }
 }

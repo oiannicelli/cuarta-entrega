@@ -21,7 +21,7 @@
 <body class="bd">
     <header>
         <nav class="navbar bg-white">
-            <a class="navbar-brand ml-2" href="./index.html">
+            <a class="navbar-brand ml-2" href="../index.html">
                 <img src="../imagenes/Isologo.svg" alt="Isologo" width="50" height="50">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-label="Toggle navigation">
@@ -42,72 +42,128 @@
         </nav>   
     </header>
     <main class="page-section">
-     <!-- Portfolio Grid-->
         <div class="container">
             <article class="row">
                 <div class="col-12 col-lg-3 mb-2">
                     <h1 class="section-heading text-uppercase">Portfolio</h1>
-                    <hr><br>
+                    <hr class="linearosa"><br>
                     <p class="section-subheading text-muted">A continuación, vas a encontrar 3 secciones las cuales se dividen por tipo de trabajo, pero al mismo tiempo pertenecen a un mismo objetivo personal y profesional: "Acompañar a empresas y emprendedores a crecer y desarrollarse como una marca reconocida y posicionada en el mercado al que pertenezcan".</p>
                 </div>
             <!--Sección 1-->
                 <div class="col-12 col-lg-3 mb-2 container">
-                    <img src="../imagenes/portfolio/bordado.jpg" alt="1r" class="image">
+                    <img src="../imagenes/portfolio/bordado.jpg" alt="1r" class="image img-responsive">
                     <div class="overlay">
-                      <a href="" class="text">Diseño textil</a>
+                      <a href="#textil" class="text">Diseño textil</a>
                     </div>
                 </div>
             <!--Sección 2-->
                 <div class="col-12 col-lg-3 mb-2 container">
-                    <img src="../imagenes/portfolio/paleta.jpg" alt="2" class="image">
+                    <img src="../imagenes/portfolio/branding.jpg" alt="3" class="image img-responsive">
                     <div class="overlay">
-                        <a href="" class="text">Desarrollo de colección</a>
+                        <a href="#branding" class="text">Branding y editorial</a>
                     </div>
                 </div>
             <!--Sección 3-->
                 <div class="col-12 col-lg-3 mb-2 container">
-                    <img src="../imagenes/portfolio/branding.jpg" alt="3" class="image">
+                    <img src="../imagenes/portfolio/paleta.jpg" alt="2" class="image img-responsive">
                     <div class="overlay">
-                        <a href="" class="text">Branding y editorial</a>
+                        <a href="#coleccion" class="text">Desarrollo de colección</a>
                     </div>
                 </div>
             </article>
         </div>
+    <!--primera sección-->
+        <section class="row">
+        <div class="col-12 text-center">
+            <h1 id="textil">Diseño textil</h1>
+            <p>Propuesta de estampa para pañuelo de 90 x 90 cm, para Rifle Paper Co.<br> Los colores vibrantes contrastan con los pasteles creando distintos mix de texturas y generando sensaciones cálidas y frescas al mismo tiempo.</p>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-5">
+                <img class="img-responsive byn"  style="width:100%" src="../imagenes/portfolio/pañuelo1.jpg" alt="5">
+            </div>
+            <div id="demo" class="carousel slide col-12 col-lg-5" data-ride="carousel">
+            <!-- Indicators -->
+                <ul class="carousel-indicators">
+                    <li data-target="#demo" data-slide-to="0" class="active"></li>
+                    <li data-target="#demo" data-slide-to="1"></li>
+                    <li data-target="#demo" data-slide-to="2"></li>
+                    <li data-target="#demo" data-slide-to="3"></li>
+                </ul>   
+            <!-- The slideshow -->
+                <div class="carousel-inner">
+                    <img class="carousel-item active img-responsive" src="../imagenes/portfolio/pañuelo2.jpg" alt="1">
+                    <img class="carousel-item img-responsive" src="../imagenes/portfolio/pañuelo3.jpg" alt="2">
+                    <img class="carousel-item img-responsive" src="../imagenes/portfolio/pañuelo4.jpg" alt="3">
+                    <img class="carousel-item img-responsive" src="../imagenes/portfolio/pañuelo5.jpg" alt="4">
+                </div>
+            <!-- Left and right controls -->
+                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#demo" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+            </div>             
+        </div>
+        </section>
+    <!--segunda sección-->
+        <article class="row">
+            <div class="col-12 text-center">
+                <h2 id="branding">Branding y editorial</h2>
+                <h6>El objetivo de este curso es que puedas incorporar la serigrafía como herramienta para producir tus propias series de obra.
+                Vas aprender todos los pasos del proceso, desde el armado de los archivos digitales para las películas, el revelado y la impresión final.<br><br>Cómo imprimir a uno y más colores, a preparar las tintas según la terminación que quieras.
+                Además, te voy a enseñar cuáles son los materiales, distintos tipos de tintas, emulsiones y todo lo que hace falta para que tu trabajo quede como te lo imaginás!</h6>
+            </div>
+            <aside class="row">
+                <div class="col-12 col-md-4">
+                    <img class="img-responsive" style="width:100%" src="../imagenes/portfolio/branding (1).jpg" alt="bastidores">
+                </div>
+                <div class="col-12 col-md-4">
+                    <img class="img-responsive" style="width:100%" src="../imagenes/portfolio/branding (2).jpg" alt="bastidores">
+                </div>
+                <div class="col-12 col-md-4">
+                    <img class="img-responsive" style="width:100%" src="../imagenes/portfolio/branding (3).jpg" alt="bastidores">
+                </div>
+            </aside>
+        </article>
+    <!--tercera sección-->
         <section class="row">
             <div class="col-12 text-center">
-                <h1>Diseño textil</h1>
-                <p>Propuesta de estampa para pañuelo de 90 x 90 cm, para Rifle Paper Co.<br> Los colores vibrantes contrastan con los pasteles creando distintos mix de texturas y generando sensaciones cálidas y frescas al mismo tiempo.</p>
+                <h1 id="coleccion">Desarrollo de colección</h1>
+                <p>El objetivo es diseñar o reformular la identidad de marca. Partiendo de la Vision y la Mision, realizo un análisis en detalle del estado actual de la marca para entener los pasos del proyecto a realizar.Luego comienzo a contruir o reconstruir los valores alineados al proposito y a los objetivos de la misma. Una marca no es solo lo tangible, sino que es el conjunto de valores, atributos, experiencias y recuerdos asociados a ella. En este punto trabajo sobre la propuesta de valor en la colección.<br><br> Se define un partido conceptual sólido y contruyo sobre este, las líneas con temáticas en la colección que sean representativas para el usuario dentro de las tendencias actuales, desde la comunicación en el diseño textil. 
+                Potenciando cada línea con cápsulas (drops).</p>
             </div>
             <div class="row justify-content-center">
-                <div class="col-12 col-lg-5">
-                    <img class="byn" style="width:100%" src="../imagenes/portfolio/pañuelo1.jpg" alt="5">
-                </div>
-                <div id="demo" class="carousel slide col-12 col-lg-5" data-ride="carousel">
+                <div id="demo3" class="carousel slide col-12" data-ride="carousel">
                 <!-- Indicators -->
                     <ul class="carousel-indicators">
-                        <li data-target="#demo" data-slide-to="0" class="active"></li>
-                        <li data-target="#demo" data-slide-to="1"></li>
-                        <li data-target="#demo" data-slide-to="2"></li>
-                        <li data-target="#demo" data-slide-to="3"></li>
+                        <li data-target="#demo3" data-slide-to="0" class="active"></li>
+                        <li data-target="#demo3" data-slide-to="1"></li>
+                        <li data-target="#demo3" data-slide-to="2"></li>
+                        <li data-target="#demo3" data-slide-to="3"></li>
                     </ul>   
                 <!-- The slideshow -->
                     <div class="carousel-inner">
-                        <img class="carousel-item active" src="../imagenes/portfolio/pañuelo2.jpg" alt="1">
-                        <img class="carousel-item" src="../imagenes/portfolio/pañuelo3.jpg" alt="2">
-                        <img class="carousel-item" src="../imagenes/portfolio/pañuelo4.jpg" alt="3">
-                        <img class="carousel-item" src="../imagenes/portfolio/pañuelo5.jpg" alt="4">
+                        <img class="carousel-item active img-responsive" src="../imagenes/portfolio/coleccion (2).jpg" alt="1">
+                        <img class="carousel-item img-responsive" src="../imagenes/portfolio/coleccion (3).jpg" alt="2">
+                        <img class="carousel-item img-responsive" src="../imagenes/portfolio/coleccion (4).jpg" alt="3">
+                        <img class="carousel-item img-responsive" src="../imagenes/portfolio/coleccion (5).jpg" alt="4">
                     </div>
                 <!-- Left and right controls -->
-                    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                    <a class="carousel-control-prev" href="#demo3" data-slide="prev">
                         <span class="carousel-control-prev-icon"></span>
                     </a>
-                    <a class="carousel-control-next" href="#demo" data-slide="next">
+                    <a class="carousel-control-next" href="#demo3" data-slide="next">
                         <span class="carousel-control-next-icon"></span>
                     </a>
-                    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                    <a class="carousel-control-prev" href="#demo3" data-slide="prev">
                         <span class="carousel-control-prev-icon"></span>
                     </a>
-                </div>             
+                </div>         
             </div>
         </section>
     </main>

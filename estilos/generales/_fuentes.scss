@@ -20,3 +20,49 @@
     color: $blanco;
     font-style: italic;
 }
+
+
+/*fondo rosa sobre titulo*/
+.wrap {
+    padding: 10% 20%;
+  }
+  .underlined {
+    color: $negro;
+    flex: 1;
+    line-height: 1.2;
+    text-decoration: none;
+    background-image: linear-gradient(to right, $pink 0, $pink 100%);
+    background-position: 0 1.2em;
+    background-size: 0 100%;
+    background-repeat: no-repeat;
+    transition: background .5s;
+    &:hover, {
+      background-size: 100% 100%;
+      color: $blanco;
+    }
+    &--thick {
+      background-position: 0 -0.1em;
+    }
+}
+
+/*texto rosa sobre titulo index*/
+.wrap {
+  padding: 10% 20%;
+}
+.pink {
+  color: $negro;
+  flex: 1;
+  line-height: 1.2;
+  text-decoration: none;
+  background-position: 0 1.2em;
+  background-size: 0 100%;
+  background-repeat: no-repeat;
+  transition: background .5s;
+  &:hover, {
+    background-size: 100% 100%;
+    color: $pink;
+  }
+  &--thick {
+    background-position: 0 -0.1em;
+  }
+}

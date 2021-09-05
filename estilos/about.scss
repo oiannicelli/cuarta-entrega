@@ -2,12 +2,11 @@
 @import "./generales/generales";
 @import "./generales/imagenes";
 @import "./generales/fuentes";
-
 body {
     main {
         justify-content: center;
         section {
-            padding-bottom: 5rem;
+            padding: 3rem 0rem 3rem 0rem;
             p {
                 @include fuente ($negro, 16px, 600, none, 1rem 10rem 0rem 0rem);
             }
@@ -20,9 +19,9 @@ body {
         }
         article {
             background-color: $negro;
-            padding: 5rem;
+            padding: 3rem 0rem 3rem 0rem;
             p {
-                @include fuente ($blanco, 16px, 600, none, 0rem);
+                @include fuente ($blanco, 16px, 600, none, 2rem 10rem 1rem 0rem);
             }
             h6 {
                 @include fuente ($blanco, 16px, 400, none, 0rem);
@@ -32,6 +31,50 @@ body {
 }
 
 @media only screen and (max-width:320px){
+    body {
+        main {
+            text-align: center;
+            section {
+                padding: 1rem;
+                p {
+                    font-size: 14px;
+                    padding: 0rem;
+                }
+                h6 {
+                    font-size: 12px;
+                    padding: 0rem;
+                }
+                img {
+                    padding-top: 20px;
+                }
+            }
+            article {
+                padding: 2rem;
+                h6 {
+                    @include fuente ($blanco, 14px, 400, none, 0rem);
+                }
+                p {
+                    @include fuente ($blanco, 12px, 600, none, 0rem);
+                }
+                button {
+                    a {            
+                        font-size: 12px; 
+                    }
+                }
+                img {
+                    padding-top: 20px;
+                }
+            }
+        }
+        footer {
+            font-size: 10px;
+            i {
+                font-size: 14px;
+            }
+        }
+    }
+}
+@media only screen and (max-width:768px){
     body {
         main {
             section {
@@ -45,18 +88,16 @@ body {
                     padding: 0rem;
                 }
                 img {
-                    padding-top: 25px;
+                    padding-top: 20px;
                 }
             }
             article {
                 padding: 2rem;
                 h6 {
-                    font-size: 12px;
-                    padding-bottom: 1rem;
+                    @include fuente ($blanco, 14px, 400, none, 0rem);
                 }
                 p {
-                    font-size: 10px;
-                    padding-bottom: 1rem;
+                    @include fuente ($blanco, 12px, 600, none, 0rem);
                 }
                 button {
                     a {            
@@ -66,9 +107,9 @@ body {
             }
         }
         footer {
-            font-size: 10px;
+            font-size: 12px;
             i {
-                font-size: 14px;
+                font-size: 16px;
             }
         }
     }

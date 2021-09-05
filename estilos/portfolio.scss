@@ -2,13 +2,14 @@
 @import "./generales/generales";
 @import "./generales/imagenes";
 @import "./generales/fuentes";
-
 body main {
-    div article {
-        margin: 5rem;
-        hr {
-            border: solid $pink;
-            border-width: 2px;
+    article {
+        padding: 1rem 3rem 3rem 3rem;
+        h2 {
+            @include fuente ($negro, 40px, 800, italic, 2rem 0rem 1rem 0rem);
+        }
+        h6 {
+            @include fuente ($negro, 16px, 600, none, 0rem 22rem 2rem 22rem);
         }
         p {
             @include fuente ($negro, 14px, 600, none, 0rem);
@@ -16,12 +17,13 @@ body main {
     }
     section div {
         background-color: $negro;
-        padding-bottom: 3rem;
+        padding: 0rem 3rem 2rem 3rem;
         h1 {
-            @include fuente ($blanco, 40px, 800, italic, 3rem 0rem 1rem 0rem);
+            @include fuente ($blanco, 40px, 800, italic, 0rem)
+            padding-top: 3rem;
         }
         p {
-            @include fuente ($blanco, 16px, 400, none, 0rem 25rem 0rem 25rem);
+            @include fuente ($blanco, 16px, 400, none, 1rem 18rem 0rem 18rem);
         }
     }
 }
@@ -74,40 +76,58 @@ body main {
     } 
 }
 
-/*
 @media only screen and (max-width:320px){
-    main section {
-        p {
-            padding: 20px 0px 10px 0px;
-            align-self: flex-start;
-            font-weight: 400;
-            font-size: 10px;
-        }
-    }
-    header {
-        section {
-            display: grid;
-            grid-template-columns: 100%;
-            justify-content: center;
-            margin: 1rem;
-            hr {
-                border: solid $pink;
-                border-width: 1px;
-            }
-            h1 {
-                font-size: 20px;
+    body main {
+        text-align: center;
+        article {
+            padding: 1rem 2rem 3rem 2rem;
+            h6 {
+                @include fuente ($negro, 14px, 600, none,  0rem);
             }
             p {
-                font-weight: 600;
-                font-size: 12px;
-                padding-top: 0rem;
+                @include fuente ($negro, 14px, 600, none, 0rem);
             }
-            h6 {
-                font-weight: 400;
-                font-size: 10px;
-                padding-bottom: 1rem;
-            }    
+            img {
+                width: 50%;
+                padding-top: 1rem;
+            }
         }
-    }     
+        section div {
+            text-align: center;
+            h6 {
+                @include fuente ($negro, 14px, 600, none, 0rem);
+            }
+            p {
+                @include fuente ($blanco, 14px, 400, none, 1rem 2rem 0rem 2rem);
+            }
+        }
+    }
 }
-*/
+@media only screen and (max-width:768px){
+    body main {
+        text-align: center;
+        article {
+            padding: 1rem 2rem 3rem 2rem;
+            h6 {
+                @include fuente ($negro, 14px, 600, none,  0rem);
+            }
+            p {
+                @include fuente ($negro, 14px, 600, none, 0rem);
+            }
+            img {
+                width: 50%;
+                padding-top: 1rem;
+            }
+        }
+        section div {
+            text-align: center;
+            h6 {
+                @include fuente ($negro, 14px, 600, none, 0rem);
+            }
+            p {
+                @include fuente ($blanco, 14px, 400, none, 1rem 2rem 0rem 2rem);
+            }
+        }
+    }
+}
+

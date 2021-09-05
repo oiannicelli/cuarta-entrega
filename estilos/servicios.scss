@@ -2,221 +2,155 @@
 @import "./generales/generales";
 @import "./generales/imagenes";
 @import "./generales/fuentes";
-body {
-    font-family: 'Karla', sans-serif;
-    a {
-        text-decoration: none !important;
-    }
-    hr {
-        border: solid $pink;
-        border-width: 2px;
-    }
-}
-
-nav {
-    font-style: italic;
-    font-weight: 600;
-    :hover {
-        color: $pink !important; 
-    }
-    a {
-        color: black;
-        :hover {
-            color: $pink !important; 
-        }
-    }
-} 
-
-header {
-section {
-    background-color: black;
-    color: white;
-    padding-top: 3rem;
-    h1 {
-        padding-bottom: 0.5rem;
-        font-weight: 600;
-        font-size: 30px;
-    }
-    p {
-        padding: 0rem 25rem 0rem 25rem;
-        font-weight: 400;
-        font-size: 14px;
-    }
-}
-article {
-    padding: 0rem 10rem 3rem 10rem;
-    background-color: black;
-
-    .container-fluid {
-        position: relative;
-        width: 100%;
-        .image {
-            display: block;
-            width: 100%;
-            height: auto;
-            filter: grayscale(0);
-            -webkit-filter: grayscale(0);
-        }
-        .overlay {
-            position: absolute;
-            top: 10;
-            bottom: 0;
-            left: 10;
-            right: 10;
-            height: 90%;
-            width: 91%;
-            opacity: 0;
-            transition: .5s ease;
-        }
-        .container:hover .overlay {
-            opacity: 1;
-        }
-        .container:hover .image {
-            filter: grayscale(100%);
-            -webkit-filter: grayscale(100%);
-        }
-        .text {
-            color: $pink;
-            background: rgba(255, 255, 255, 0.65);
-            font-weight: 600;
-            font-size: 20px;
-            font-style: italic;
-            position: absolute;
-            width: 19.5rem;
-            height: 2rem;
-            top: 50%;
-            left: 50%;
-            -webkit-transform: translate(-50%, -50%);
-            -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-            text-align: center;
-        } 
-    }
-}
-}
-
-main { 
-    section {
-        padding: 5rem 0rem 0rem 12rem;
-        justify-items: center;
+body main {
+    article {
+        padding: 2rem 12rem 2rem 12rem;
         h1 {
-            font-size: 40px;
-            font-weight: bold;
+            @include fuente ($negro, 35px, 600, none, 0rem);
         }
         h2 {
-            font-size: 40px;
-            font-weight: bold;
-            font-style: italic;
-            padding-top: 2rem;
-        }
-        h4 {
-            font-style: italic;
+            @include fuente ($negro, 40px, 800, italic, 0rem);
         }
         h6 {
-            font-size: 16px;
-            padding: 2rem 10rem 0rem 0rem;
+            @include fuente ($negro, 16px, 400, none, 2rem 3rem 0rem 0rem);
+        }
+        p {
+            @include fuente ($negro, 14px, 600, none, 1rem 20rem 0rem 20rem); 
+        }
+        img {
+            padding-bottom: 1rem;
         }
         aside {
-            padding: 3rem 12rem 0rem 1rem;
-            text-align: center;
             p {
-                padding: 2rem 4rem 1rem 4rem;
-                font-size: 14px;
-            }
-            button {
-                padding: 1rem;
-                border: solid $pink !important;
-                border-width: 2px !important;
-                a {
-                    color: $pink;
-                    font-weight: 600;
-                    :hover {
-                    color: black;
-                    }
-                }   
+                @include fuente ($negro, 16px, 600, none, 2rem);
             }
         }
     }
-    article {
-        padding: 6rem 13rem 2rem 13rem;
-        background-color: black;
-        color: white;
-        h1 {
-            font-style: italic;
+    section {
+        background-color: $negro;
+        padding: 2rem 12rem 2rem 12rem;
+        h2 {
+            @include fuente ($blanco, 40px, 600, italic, 0rem);
         }
-        p {
-         padding: 1rem 5rem 1rem 0rem;
-         font-size: 14px;
-        }
-        div img {
-            padding-bottom: 4rem;
+        h4 {
+            @include fuente ($blanco, 25px, 400, none, 0rem);
         }
         h6 {
+            @include fuente ($blanco, 16px, 400, none, 0rem);
+        }
+        p {
+            @include fuente ($blanco, 16px, 600, none, 0rem);
+        }
+        img {
             padding-top: 1rem;
         }
         fieldset {
-            color: white;
+
+            color: $blanco;
             i {
-                padding-bottom: 2rem;
-            }
-            label {
-                font-size: 14px;
-            }
-            input {
-               
-                color: $pink !important;
-                font-weight: 600;
-                padding: 1rem;
-                border: solid $pink !important;
-                border-width: 2px !important;
+                padding: 2rem 0rem 2rem 0rem;
             }
         }
-    }
-    .img-byn {
-        filter: grayscale(100%);
-        -webkit-filter: grayscale(100%);
-        transition: filter 600ms ease;
-        -webkit-transition: -webkit-filter 600ms ease;
-    }
-    :hover {
-        filter: grayscale(0);
-        -webkit-filter: grayscale(0);
     }
 }
 
 @media only screen and (max-width:320px){
-    main section {
-        p {
-            padding: 20px 0px 10px 0px;
-            align-self: flex-start;
-            font-weight: 400;
-            font-size: 10px;
-        }
-    }
-    header {
-        section {
-            display: grid;
-            grid-template-columns: 100%;
-            justify-content: center;
-            margin: 1rem;
-            hr {
-                border: solid $pink;
-                border-width: 1px;
-            }
+    body main {
+        text-align: center;
+        article {
+            padding: 1rem 2rem 2rem 2rem;
             h1 {
-                font-size: 20px;
+                font-size: 28px;
             }
-            p {
-                font-weight: 600;
-                font-size: 12px;
-                padding-top: 0rem;
+            h2 {
+                @include fuente ($negro, 28px, 800, italic, 1rem 0rem 0rem 0rem);
+            }
+            h4 {
+                @include fuente ($blanco, 16px, 400, none, 0rem);
             }
             h6 {
-                font-weight: 400;
-                font-size: 10px;
-                padding-bottom: 1rem;
-            }    
+                @include fuente ($negro, 14px, 400, none, 1rem 0rem 0rem 0rem);
+            }
+            p {
+                @include fuente ($negro, 12px, 600, none, 1rem 2rem 0rem 2rem); 
+            }
+            aside {
+                p {
+                    @include fuente ($negro, 14px, 400, none, 1rem 4rem 0rem 4rem);
+                }
+            }
         }
-    }     
+        section {
+            padding: 2rem 2rem 2rem 2rem;
+            h2 {
+                @include fuente ($blanco, 30px, 600, italic, 1rem 0rem 0rem 0rem);
+            }
+            h4 {
+                @include fuente ($blanco, 20px, 400, none, 0rem);
+            }
+            h6 {
+                @include fuente ($blanco, 14px, 400, none, 1rem 1rem 0rem 1rem);
+            }
+            p {
+                @include fuente ($blanco, 14px, 600, none, 1rem 1rem 0rem 1rem);
+            }
+            img {
+                padding-bottom: 1rem;
+            }
+        }
+    }
 }
-
+@media only screen and (max-width:768px){
+    body main {
+        article {
+            padding: 2rem 8rem 2rem 8rem;
+            h1 {
+                @include fuente ($negro, 30px, 600, none, 0rem 8rem 1rem 8rem);
+            }
+            h2 {
+                @include fuente ($negro, 25px, 800, italic, 0rem 0rem 1rem 0rem);
+            }
+            h4 {
+                @include fuente ($negro, 16px, 400, none, 0rem);
+            }
+            h6 {
+                @include fuente ($negro, 14px, 400, none, 1rem 2rem 0rem 0rem);
+            }
+            p {
+                @include fuente ($negro, 14px, 600, none, 0rem 10rem 0rem 10rem); 
+            }
+            img {
+                padding-bottom: 1rem;
+            }
+            aside {
+                p {
+                    @include fuente ($negro, 12px, 600, none, 0rem);
+                }
+            }
+        }
+        section {
+            padding: 2rem 8rem 2rem 8rem;
+            h2 {
+                @include fuente ($blanco, 20px, 600, italic, 0rem);
+            }
+            h4 {
+                @include fuente ($blanco, 15px, 400, none, 0rem);
+            }
+            h6 {
+                @include fuente ($blanco, 12px, 400, none, 0rem);
+            }
+            p {
+                @include fuente ($blanco, 14px, 600, none, 0rem);
+            }
+            img {
+                padding-top: 1rem;
+            }
+            fieldset {
+                color: $blanco;
+                i {
+                    padding: 2rem 0rem 2rem 0rem;
+                }
+            }
+        }
+    }
+}
