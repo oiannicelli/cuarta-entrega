@@ -2,7 +2,6 @@
 @import "./generales/generales";
 @import "./generales/imagenes";
 @import "./generales/fuentes";
-
 body {
     main section article {
         justify-content: center;
@@ -14,7 +13,6 @@ body {
         }
     }
 }
-
 @media only screen and (max-width:320px) {
     body {
         main section article {

@@ -2,42 +2,11 @@
 @import "./generales/generales";
 @import "./generales/imagenes";
 @import "./generales/fuentes";
-body main {
-    section {
-        background-color: $negro;
-        padding: 2rem 12rem 2rem 12rem;
-        h1 {
-            @include fuente ($blanco, 40px, 600, none, 0rem);
-        }
-        p {
-            @include fuente ($blanco, 16px, 400, none, 0rem 12rem 0rem 0rem);
-        }
-        h6 {
-            @include fuente ($blanco, 14px, 400, none, 0rem 25rem 5rem 0rem);
-        }
-        fieldset {
-            label {
-                @include fuente ($blanco, 12px, 400, none, 0rem);
-            }
-            input {
-                padding: 3px;
-                width: 280px;
-            }
-            textarea {
-                width: 280px;
-            }
-            .enviar {
-                background-color: $pink;
-                color: $blanco;
-                border-color: transparent;
-                border-radius: 12px;
-            }
-        }
-    }
-}
+
 @media only screen and (max-width:320px){
     body main {
         section {
+            background-color: $negro;
             padding: 2rem 0rem 2rem 0rem;
             h1 {
                 @include fuente ($blanco, 40px, 600, none, 0rem);
@@ -48,12 +17,31 @@ body main {
             h6 {
                 @include fuente ($blanco, 14px, 400, none, 0rem 0rem 2rem 0rem);
             }
+            fieldset {
+                label {
+                    @include fuente ($blanco, 12px, 400, none, 0rem);
+                }
+                input {
+                    padding: 3px;
+                    width: 300px;
+                }
+                textarea {
+                    width: 300px;
+                }
+                .enviar {
+                    background-color: $pink;
+                    color: $blanco;
+                    border-color: transparent;
+                    border-radius: 12px;
+                }
+            }
         }
     }
 }
 @media only screen and (min-width:768px){
     body main {
         section {
+            background-color: $negro;
             padding: 2rem 0rem 2rem 0rem;
             h1 {
                 @include fuente ($blanco, 40px, 600, none, 0rem);
@@ -65,6 +53,9 @@ body main {
                 @include fuente ($blanco, 16px, 400, none, 0rem 4rem 2rem 0rem);
             }
             fieldset {
+                label {
+                    @include fuente ($blanco, 12px, 400, none, 0rem);
+                }
                 input {
                     padding: 3px;
                     width: 200px;
@@ -72,9 +63,47 @@ body main {
                 textarea {
                     width: 200px;
                 }
+                .enviar {
+                    background-color: $pink;
+                    color: $blanco;
+                    border-color: transparent;
+                    border-radius: 12px;
+                }
             }
         }
     }
 }
-
-
+@media only screen and (min-width:1024px){
+    body main {
+        section {
+            padding: 2rem 12rem 2rem 12rem;
+            h1 {
+                @include fuente ($blanco, 40px, 600, none, 0rem);
+            }
+            p {
+                @include fuente ($blanco, 16px, 400, none, 0rem 12rem 0rem 0rem);
+            }
+            h6 {
+                @include fuente ($blanco, 14px, 400, none, 0rem 25rem 5rem 0rem);
+            }
+            fieldset {
+                label {
+                    @include fuente ($blanco, 12px, 400, none, 0rem);
+                }
+                input {
+                    padding: 3px;
+                    width: 300px;
+                }
+                textarea {
+                    width: 300px;
+                }
+                .enviar {
+                    background-color: $pink;
+                    color: $blanco;
+                    border-color: transparent;
+                    border-radius: 12px;
+                }
+            }
+        }
+    }
+}

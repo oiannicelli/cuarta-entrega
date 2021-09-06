@@ -207,61 +207,9 @@
   background-position: 0 -0.1em;
 }
 
-body main section {
-  background-color: #0A0A0A;
-  padding: 2rem 12rem 2rem 12rem;
-}
-
-body main section h1 {
-  color: #F9F7F4;
-  font-size: 40px;
-  font-weight: 600;
-  font-style: none;
-  padding: 0rem;
-}
-
-body main section p {
-  color: #F9F7F4;
-  font-size: 16px;
-  font-weight: 400;
-  font-style: none;
-  padding: 0rem 12rem 0rem 0rem;
-}
-
-body main section h6 {
-  color: #F9F7F4;
-  font-size: 14px;
-  font-weight: 400;
-  font-style: none;
-  padding: 0rem 25rem 5rem 0rem;
-}
-
-body main section fieldset label {
-  color: #F9F7F4;
-  font-size: 12px;
-  font-weight: 400;
-  font-style: none;
-  padding: 0rem;
-}
-
-body main section fieldset input {
-  padding: 3px;
-  width: 280px;
-}
-
-body main section fieldset textarea {
-  width: 280px;
-}
-
-body main section fieldset .enviar {
-  background-color: #ff0054;
-  color: #F9F7F4;
-  border-color: transparent;
-  border-radius: 12px;
-}
-
 @media only screen and (max-width: 320px) {
   body main section {
+    background-color: #0A0A0A;
     padding: 2rem 0rem 2rem 0rem;
   }
   body main section h1 {
@@ -285,10 +233,31 @@ body main section fieldset .enviar {
     font-style: none;
     padding: 0rem 0rem 2rem 0rem;
   }
+  body main section fieldset label {
+    color: #F9F7F4;
+    font-size: 12px;
+    font-weight: 400;
+    font-style: none;
+    padding: 0rem;
+  }
+  body main section fieldset input {
+    padding: 3px;
+    width: 300px;
+  }
+  body main section fieldset textarea {
+    width: 300px;
+  }
+  body main section fieldset .enviar {
+    background-color: #ff0054;
+    color: #F9F7F4;
+    border-color: transparent;
+    border-radius: 12px;
+  }
 }
 
 @media only screen and (min-width: 768px) {
   body main section {
+    background-color: #0A0A0A;
     padding: 2rem 0rem 2rem 0rem;
   }
   body main section h1 {
@@ -312,11 +281,71 @@ body main section fieldset .enviar {
     font-style: none;
     padding: 0rem 4rem 2rem 0rem;
   }
+  body main section fieldset label {
+    color: #F9F7F4;
+    font-size: 12px;
+    font-weight: 400;
+    font-style: none;
+    padding: 0rem;
+  }
   body main section fieldset input {
     padding: 3px;
     width: 200px;
   }
   body main section fieldset textarea {
     width: 200px;
+  }
+  body main section fieldset .enviar {
+    background-color: #ff0054;
+    color: #F9F7F4;
+    border-color: transparent;
+    border-radius: 12px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  body main section {
+    padding: 2rem 12rem 2rem 12rem;
+  }
+  body main section h1 {
+    color: #F9F7F4;
+    font-size: 40px;
+    font-weight: 600;
+    font-style: none;
+    padding: 0rem;
+  }
+  body main section p {
+    color: #F9F7F4;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: none;
+    padding: 0rem 12rem 0rem 0rem;
+  }
+  body main section h6 {
+    color: #F9F7F4;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: none;
+    padding: 0rem 25rem 5rem 0rem;
+  }
+  body main section fieldset label {
+    color: #F9F7F4;
+    font-size: 12px;
+    font-weight: 400;
+    font-style: none;
+    padding: 0rem;
+  }
+  body main section fieldset input {
+    padding: 3px;
+    width: 300px;
+  }
+  body main section fieldset textarea {
+    width: 300px;
+  }
+  body main section fieldset .enviar {
+    background-color: #ff0054;
+    color: #F9F7F4;
+    border-color: transparent;
+    border-radius: 12px;
   }
 }
