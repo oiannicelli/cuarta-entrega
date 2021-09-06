@@ -309,7 +309,7 @@ body main section fieldset i {
     text-align: center;
   }
   body main article {
-    padding: 1rem 2rem 2rem 2rem;
+    padding: 0rem;
   }
   body main article h1 {
     font-size: 28px;
@@ -322,9 +322,9 @@ body main section fieldset i {
     padding: 1rem 0rem 0rem 0rem;
   }
   body main article h4 {
-    color: #F9F7F4;
+    color: #0A0A0A;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 600;
     font-style: none;
     padding: 0rem;
   }
@@ -385,7 +385,7 @@ body main section fieldset i {
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   body main article {
     padding: 2rem 8rem 2rem 8rem;
   }

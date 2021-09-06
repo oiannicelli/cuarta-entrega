@@ -35,7 +35,6 @@ body main {
         }
     }
 }
-
 @media only screen and (max-width:320px){
     body main {
         section {
@@ -48,6 +47,31 @@ body main {
             }
             h6 {
                 @include fuente ($blanco, 14px, 400, none, 0rem 0rem 2rem 0rem);
+            }
+        }
+    }
+}
+@media only screen and (min-width:768px){
+    body main {
+        section {
+            padding: 2rem 0rem 2rem 0rem;
+            h1 {
+                @include fuente ($blanco, 40px, 600, none, 0rem);
+            }
+            p {
+                @include fuente ($blanco, 18px, 400, none, 0rem 4rem 0rem 0rem);
+            }
+            h6 {
+                @include fuente ($blanco, 16px, 400, none, 0rem 4rem 2rem 0rem);
+            }
+            fieldset {
+                input {
+                    padding: 3px;
+                    width: 200px;
+                }
+                textarea {
+                    width: 200px;
+                }
             }
         }
     }

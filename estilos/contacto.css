@@ -286,3 +286,37 @@ body main section fieldset .enviar {
     padding: 0rem 0rem 2rem 0rem;
   }
 }
+
+@media only screen and (min-width: 768px) {
+  body main section {
+    padding: 2rem 0rem 2rem 0rem;
+  }
+  body main section h1 {
+    color: #F9F7F4;
+    font-size: 40px;
+    font-weight: 600;
+    font-style: none;
+    padding: 0rem;
+  }
+  body main section p {
+    color: #F9F7F4;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: none;
+    padding: 0rem 4rem 0rem 0rem;
+  }
+  body main section h6 {
+    color: #F9F7F4;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: none;
+    padding: 0rem 4rem 2rem 0rem;
+  }
+  body main section fieldset input {
+    padding: 3px;
+    width: 200px;
+  }
+  body main section fieldset textarea {
+    width: 200px;
+  }
+}
