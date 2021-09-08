@@ -106,7 +106,7 @@
      object-fit: cover;
   height: 55vh;
   position: absolute;
-  background-image: url(../imagenes/index/fondo-index.jpg);
+  background-image: url(../../imagenes/fondo-index.jpg);
   background-size: cover;
   -webkit-animation: movimiento 50s infinite linear;
           animation: movimiento 50s infinite linear;
